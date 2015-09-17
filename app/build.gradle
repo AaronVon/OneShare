@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.1.0'
     compile files('/Users/Aaron/repositories/OneShare/libs/butterknife-7.0.1.jar')
     compile project(':library')
+    compile files('/Users/Aaron/repositories/OneShare/libs/libammsdk.jar')
 }
