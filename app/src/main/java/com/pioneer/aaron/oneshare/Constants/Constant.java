@@ -12,4 +12,11 @@ public interface Constant {
     int COMMAND_SHOWMESSAGE_FROM_WX = 4;
     String WX_TOKEN_KEY = "wx_token_key";
     String WX_TOKEN_VALUE = "com.tencent.mm.openapi.token";
+
+    //shared preference
+    String SHAREDPREFS = "sharedPres";
+    String INITIALLAUNCH = "initial_launch";
+    String WECHAT_SELECTED = "wechat_selected";
+    String WEIBO_SELECTED = "weibo_selected";
+    String QZONE_SELECTED = "qzone_selected";
 }

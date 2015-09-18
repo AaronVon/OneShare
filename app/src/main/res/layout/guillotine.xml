@@ -16,4 +16,55 @@
             android:src="@mipmap/ic_menu" />
     </android.support.v7.widget.Toolbar>
 
+    <LinearLayout
+        android:id="@+id/wechat_group"
+        android:onClick="click_group"
+        style="@style/LinearLayout.GuillotineItem"
+        android:layout_marginTop="@dimen/guillotine_medium_margin">
+
+        <ImageView
+            android:id="@+id/ic_wechat"
+            style="@style/ImageView.GuillotineItem"
+            android:src="@drawable/wechat" />
+
+        <com.pioneer.aaron.oneshare.CanaroTextView
+            android:id="@+id/tx_wechat"
+            style="@style/TextView.GuillotineItem"
+            android:text="@string/wechat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qzone_group"
+        android:onClick="click_group"
+        style="@style/LinearLayout.GuillotineItem"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/ic_qzone"
+            style="@style/ImageView.GuillotineItem"
+            android:src="@drawable/qzone" />
+
+        <com.pioneer.aaron.oneshare.CanaroTextView
+            android:id="@+id/tx_qzone"
+            style="@style/TextView.GuillotineItem"
+            android:text="@string/qzone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weibo_group"
+        android:onClick="click_group"
+        style="@style/LinearLayout.GuillotineItem"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/ic_weibo"
+            style="@style/ImageView.GuillotineItem"
+            android:src="@drawable/weibo" />
+
+        <com.pioneer.aaron.oneshare.CanaroTextView
+            android:id="@+id/tx_weibo"
+            style="@style/TextView.GuillotineItem"
+            android:text="@string/weibo" />
+    </LinearLayout>
+
 </LinearLayout>
