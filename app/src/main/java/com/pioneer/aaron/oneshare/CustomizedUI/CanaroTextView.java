@@ -1,8 +1,10 @@
-package com.pioneer.aaron.oneshare;
+package com.pioneer.aaron.oneshare.CustomizedUI;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
+
+import com.pioneer.aaron.oneshare.App;
 
 
 /**

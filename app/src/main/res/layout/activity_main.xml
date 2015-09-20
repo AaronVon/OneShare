@@ -27,7 +27,7 @@
                 style="@style/ImageView.Hamburger"
                 android:src="@mipmap/ic_menu_90" />
 
-            <com.pioneer.aaron.oneshare.CanaroTextView
+            <com.pioneer.aaron.oneshare.CustomizedUI.CanaroTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

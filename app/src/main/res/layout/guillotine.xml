@@ -16,55 +16,71 @@
             android:src="@mipmap/ic_menu" />
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
-        android:id="@+id/wechat_group"
-        android:onClick="click_group"
-        style="@style/LinearLayout.GuillotineItem"
-        android:layout_marginTop="@dimen/guillotine_medium_margin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/wechat_group"
+            android:onClick="click_group"
+            style="@style/LinearLayout.GuillotineItem">
 
-        <ImageView
-            android:id="@+id/ic_wechat"
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/wechat" />
+            <ImageView
+                android:id="@+id/ic_wechat"
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/wechat" />
 
-        <com.pioneer.aaron.oneshare.CanaroTextView
-            android:id="@+id/tx_wechat"
-            style="@style/TextView.GuillotineItem"
-            android:text="@string/wechat" />
-    </LinearLayout>
+            <com.pioneer.aaron.oneshare.CustomizedUI.CanaroTextView
+                android:id="@+id/tx_wechat"
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/wechat" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/qzone_group"
-        android:onClick="click_group"
-        style="@style/LinearLayout.GuillotineItem"
-        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:id="@+id/qzone_group"
+            android:onClick="click_group"
+            style="@style/LinearLayout.GuillotineItem"
+            android:layout_below="@+id/weibo_group"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
-        <ImageView
-            android:id="@+id/ic_qzone"
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/qzone" />
+            <ImageView
+                android:id="@+id/ic_qzone"
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/qzone" />
 
-        <com.pioneer.aaron.oneshare.CanaroTextView
-            android:id="@+id/tx_qzone"
-            style="@style/TextView.GuillotineItem"
-            android:text="@string/qzone" />
-    </LinearLayout>
+            <com.pioneer.aaron.oneshare.CustomizedUI.CanaroTextView
+                android:id="@+id/tx_qzone"
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/qzone" />
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/weibo_group"
-        android:onClick="click_group"
-        style="@style/LinearLayout.GuillotineItem"
-        android:layout_marginTop="16dp">
+        <LinearLayout
+            android:id="@+id/weibo_group"
+            android:onClick="click_group"
+            style="@style/LinearLayout.GuillotineItem"
+            android:layout_below="@+id/wechat_group"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
-        <ImageView
-            android:id="@+id/ic_weibo"
-            style="@style/ImageView.GuillotineItem"
-            android:src="@drawable/weibo" />
+            <ImageView
+                android:id="@+id/ic_weibo"
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/weibo" />
 
-        <com.pioneer.aaron.oneshare.CanaroTextView
-            android:id="@+id/tx_weibo"
-            style="@style/TextView.GuillotineItem"
-            android:text="@string/weibo" />
-    </LinearLayout>
+            <com.pioneer.aaron.oneshare.CustomizedUI.CanaroTextView
+                android:id="@+id/tx_weibo"
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/weibo" />
+        </LinearLayout>
+
+        <com.pioneer.aaron.oneshare.CustomizedUI.VerticalTextView
+            android:text="@string/app_name"
+            android:layout_marginTop="@dimen/guillotine_large_margin"
+            android:layout_marginLeft="16dp"
+            android:textSize="20sp"
+            android:gravity="bottom|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 
 </LinearLayout>
